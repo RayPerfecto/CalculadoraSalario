@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de salario"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172554" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Introduce tus datos para calcular tu salario neto."
+            android:textSize="14sp"
+            android:textColor="#64748B" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Edad"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:hint="Introduce tu edad"
+            android:inputType="number"
+            android:padding="12dp"
+            android:backgroundTint="#64748B" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Grupo profesional"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <Spinner
+            android:id="@+id/spGrupoProfesional"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Número de pagas"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <Spinner
+            android:id="@+id/spNumeroPagas"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Grado de discapacidad (%)"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <EditText
+            android:id="@+id/etDiscapacidad"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:hint="Introduce el porcentaje (0-100)"
+            android:inputType="number"
+            android:padding="12dp"
+            android:backgroundTint="#64748B" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Salario bruto anual (€)"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <EditText
+            android:id="@+id/etSalarioBruto"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:hint="Ej. 28000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:backgroundTint="#64748B" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Estado civil"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <Spinner
+            android:id="@+id/spEstadoCivil"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Número de hijos"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <EditText
+            android:id="@+id/etNumeroHijos"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:hint="Introduce el número de hijos"
+            android:inputType="number"
+            android:padding="12dp"
+            android:backgroundTint="#64748B" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="24dp"
+            android:text="Calcular salario neto"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB" />
+
+    </LinearLayout>
+
+</ScrollView>
